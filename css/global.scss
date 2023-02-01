@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* The base font for the site must be Verdana. */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ffffff;
+}
+.main-color-1 {
+}
+
+/* Navigation */
+/*  The background color must be #FFFFFF
+    The site logo/wordmark color must be #335576
+    The currently active page must be underlined using the color #DB7A4E */
+
+/* FOOTER */
+/* The background color must be #FEFAF5
+The footer titles and text must be the color #335576
+The footer subtitles must be the color #DB7A4E */
