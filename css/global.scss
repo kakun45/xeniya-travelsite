@@ -1,3 +1,17 @@
+/*  The background color must be #FFFFFF.
+    The site logo/wordmark color must be #335576
+    The currently active page must be underlined using the color #DB7A4E */
+
+/* FOOTER, The background color must be #FEFAF5
+The footer titles and text must be the color #335576
+The footer subtitles must be the color #DB7A4E */
+
+$wordmark: #335576;
+$background: #ffffff;
+$highlight: #db7a4e;
+$secondary: #fefaf5;
+$footer-titles: #335576;
+
 *,
 *::before,
 *::after {
@@ -7,18 +21,38 @@
 }
 body {
   /* The base font for the site must be Verdana. */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #ffffff;
-}
-.main-color-1 {
+  font-family: Verdana, Geneva, Tahoma;
+  background-color: $background;
+  padding: 1rem;
+  color: $wordmark;
 }
 
-/* Navigation */
-/*  The background color must be #FFFFFF
-    The site logo/wordmark color must be #335576
-    The currently active page must be underlined using the color #DB7A4E */
-
-/* FOOTER */
-/* The background color must be #FEFAF5
-The footer titles and text must be the color #335576
-The footer subtitles must be the color #DB7A4E */
+// /* Navigation */
+header {
+  width: 100%;
+  position: fixed;
+}
+.wordmark {
+  color: $wordmark;
+}
+.navigation {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.highlight {
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid $highlight;
+}
+.navigation__menu a {
+  text-decoration: none;
+  color: black;
+}
+.navigation__item {
+  display: inline-block;
+  margin: 1rem;
+}
+// Hero
+// /* FOOTER */

@@ -17,7 +17,8 @@
     1. Navigation Bar 
     -Will contain working links for each page
     -Logo (should link to the Home page)
-    -Home
+
+    -Home (should link to the Home page)
     -Iceland
     -Greece
     -Hawaii 
@@ -27,18 +28,29 @@
     <!-- Each page MUST have an identical Navigation Bar with the following style:
     The Navigation Bar MUST be fixed to the top of the page -->
     <header>
-      <nav>
-        <ul>
-          <li class="a"></li>
-          <li class="a"></li>
-          <li class="a"></li>
-          <li class="a"></li>
-        </ul>
+      <nav class="navigation">
+        <div class="navigation__menu">
+          <a href="#"><h2 class="wordmark">Travel Site</h3></a>
+        </div>
+        <div class="navigation__menu nav--right">
+          <ul class="">
+            <a href="#"><li class="navigation__item highlight">Home</li></a>
+            <a href="./pages/hawaii.html"
+              ><li class="navigation__item">Hawaii</li></a
+            >
+            <a href="./pages/iceland.html"
+              ><li class="navigation__item">Iceland</li></a
+            >
+            <a href="./pages/greece.html"
+              ><li class="navigation__item">Greece</li></a
+            >
+          </ul>
+        </div>
       </nav>
     </header>
 
     <!-- 2.Hero -->
-    <main></main>
+    <main class="hero"> </main>
 
     <!-- 3.Recommendations
 -One card for each destination
