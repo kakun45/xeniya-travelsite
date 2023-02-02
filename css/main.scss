@@ -19,4 +19,39 @@ Blur: 4px
 Color: Black, with an opacity of 20% */
 
 // import vars
-@use './global.scss' as *;
+@use "./global.scss" as *;
+
+// Hero
+main {
+  background-color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 80%;
+  // height: auto; //reset it when pic is in
+  background-color: $secondary;
+}
+.hero--left {
+  width: 50%;
+  padding-left: 7rem;
+}
+.hero--right{
+  width: 50%;
+  text-align: center;
+}
+.size {
+  width: 70%;
+}
+button {
+  width: 15rem;
+  font-size: 1.16em;
+  font-weight: 400;
+  background-color: $highlight;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  color: $background;
+}

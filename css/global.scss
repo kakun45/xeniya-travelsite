@@ -10,27 +10,45 @@ $wordmark: #335576;
 $background: #ffffff;
 $highlight: #db7a4e;
 $secondary: #fefaf5;
-$footer-titles: #335576;
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  // padding: 0;
 }
 body {
   /* The base font for the site must be Verdana. */
   font-family: Verdana, Geneva, Tahoma;
   background-color: $background;
-  padding: 1rem;
+  font-weight: 400;
   color: $wordmark;
+  
 }
 
+h1,
+h3,
+p,
+button {
+  margin: 1rem;
+}
+.padding {
+    padding-left: 3rem;
+}
 // /* Navigation */
 header {
   width: 100%;
+  height: 4rem;
+  background-color: $background;
   position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+html body {
+  padding-top: 4rem;
+  // width: 80%;
 }
 .wordmark {
   color: $wordmark;
@@ -54,5 +72,4 @@ header {
   display: inline-block;
   margin: 1rem;
 }
-// Hero
 // /* FOOTER */
