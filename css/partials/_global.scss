@@ -19,7 +19,9 @@ body {
   font-weight: 400;
   color: $wordmark;
 }
-
+li {
+  list-style-type: none;
+}
 h1,
 h3,
 p,
@@ -74,7 +76,7 @@ html body {
 }
 // Box dimensions
 .card {
-  width: 19rem;
+  width: 15rem;
   height: 23rem;
   background-color: green;
   border: 0;
@@ -82,7 +84,6 @@ html body {
   margin: 0 1rem;
   position: relative;
   display: flex;
-  
 }
 .card__link {
   position: absolute;
@@ -93,11 +94,23 @@ html body {
   content: "";
   text-decoration: none;
 }
-.card-img {
-  border-color: black;
-  // background-image: ?;
-}
+
 // FOOTER
 footer {
   background-color: $secondary;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // align-items: stretch; // may be needed
+}
+.social__img {
+  height: 2rem;
+}
+.footer__subtitle {
+  color: $highlight;
 }
