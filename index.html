@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/global.css" />
+    <!-- <link rel="stylesheet" href="./css/global.css" /> -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- Use the BEM methodology for all your class names.
       The layout of your site MUST use the Box Model, the CSS display property and CSS positioning including Flexbox. For this project, you should not use floats. -->
@@ -30,7 +30,7 @@
     <header>
       <nav class="navigation">
         <div class="navigation__menu">
-          <a href="#"><h2 class="wordmark">Travel Site</h3></a>
+          <a href="#"><h2 class="wordmark">Travel Site</h2></a>
         </div>
         <div class="navigation__menu nav--right">
           <ul class="">
@@ -53,11 +53,20 @@
     <main>
       <div class="hero padding hero--left">
         <h1>Travelling Comes With Endless Discoveries</h1>
-        <p>Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
-        <button>Get started</button>
+        <p>
+          Don't let your dreams be just dreams. Experience the world by booking
+          a vacation with us now.
+        </p>
+        <div class=""><button>Get started</button></div>
       </div>
-      <div class="hero hero--right"><img class="size" src="./assets/images/hero.png" alt="a tracked plane flying around a globe"></div>
-      </main>
+      <div class="hero hero--right">
+        <img
+          class="hero--right--img-size"
+          src="./assets/images/hero.png"
+          alt="a tracked plane flying around a globe"
+        />
+      </div>
+    </main>
 
     <!-- 3.Recommendations
 -One card for each destination
@@ -68,13 +77,26 @@ Recommendations Destination Cards: MUST use the <a> tag around the cards in orde
   Reuse as much styling and code as possible (e.g. Destination Cards and Itinerary cards), and build your project around common component code that you can reuse if possible.
   -->
     <section>
-      <div><a href=""></a></div>
-      <div><a href=""></a></div>
-      <div><a href=""></a></div>
+      <h1 class="padding">Recommendations</h1>
+      <div class="card-parent">
+        <!-- testing <ul> works too:
+          <ul>
+          <li class="card card-img destination__title--1"><h1>0.Hawaii</h1>
+            <a class="card__link" href="./pages/hawaii.html"></a></li>
+        </ul> -->
+
+        <div class="card card-img destination__title--1"><h1 class="card__title">Hawaii</h1><a class="card__link" href="./pages/hawaii.html"></a></div>
+        <div class="card card-img destination__title--2"><h1 class="card__title"><h1>Iceland</h1><a class="card__link" href="./pages/iceland.html"></a></div>
+        <div class="card card-img destination__title--3"><h1>Greece</h1><a class="card__link" href="./pages/greece.html"></a></div>
+      </div>
     </section>
 
     <!-- 4.Footer universal for all 
     Each page MUST have an identical footer -->
-    <footer></footer>
+    <footer>
+      <section class="contact"><h1>Contact</h1></section>
+      <section class="hours"><h1>Hours</h1></section>
+      <section class="social"><h1>Social</h1></section>
+    </footer>
   </body>
 </html>

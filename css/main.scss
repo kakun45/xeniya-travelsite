@@ -1,10 +1,53 @@
-/* Home Page - Hero Section:
+/* main.css
+Home Page - Hero Section:
 
 The hero background color must be #FEFAF5
 The text content must be left aligned
 The slogan color must be #335576
 The ‘Get Started’ button background color must be #DB7A4E */
 
+// import vars doesn't come from _global.scss TODO
+@use "./partials/global";
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+// Hero
+main {
+  height: 29rem;
+  background-color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 80%;
+  overflow: hidden;
+}
+.hero--left {
+  width: 50%;
+  position: relative;
+}
+.hero--right {
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+.hero--right--img-size {
+  width: 70%;
+}
+button {
+  width: 50%;
+  font-size: 1.16em;
+  font-weight: 400;
+  background-color: $highlight;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  color: $background;
+  margin-left: 2rem;
+}
+
+// Recommendations
 /* Home Page - Recommendations Section:
 
 The recommendations title must have the color of #335576
@@ -18,40 +61,20 @@ Vertical Offset: 4px
 Blur: 4px
 Color: Black, with an opacity of 20% */
 
-// import vars
-@use "./global.scss" as *;
-
-// Hero
-main {
-  background-color: $secondary;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero {
-  width: 80%;
-  // height: auto; //reset it when pic is in
-  background-color: $secondary;
-}
-.hero--left {
-  width: 50%;
-  padding-left: 7rem;
-}
-.hero--right{
-  width: 50%;
-  text-align: center;
-}
-.size {
-  width: 70%;
-}
-button {
-  width: 15rem;
-  font-size: 1.16em;
-  font-weight: 400;
-  background-color: $highlight;
-  border: 0;
-  padding: 0.5rem;
-  border-radius: 3rem;
+// Card: outside box. Here is where the shadows and borders of landing page are set
+.card-img {
+  border: 1px solid rgba($color: #000000, $alpha: 20%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   color: $background;
+}
+
+// Cards' background & titles styling
+.destination__title--1 {
+  @include destination__title("../assets/images/hawaii.jpg");
+}
+.destination__title--2 {
+  @include destination__title("../assets/images/iceland.jpg");
+}
+.destination__title--3 {
+  @include destination__title("../assets/images/greece.jpg");
 }

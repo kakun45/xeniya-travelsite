@@ -1,8 +1,23 @@
-@use './variables' as *;
+@use "./variables" as *;
 
-// example
+// example defenition:
 // @mixin section-title($borderType, $borderColor) {
 //   padding-bottom: 1rem;
 //   border-bottom: 5px $borderType $borderColor;
 //   box-shadow: 0 0 6px 0 #000;
+// }
+
+// takes in img 'url' to render a background, and sets a title to bottom right. Prepares a container to have cover background
+@mixin destination__title($url) {
+  background-image: url($url);
+  background-size: cover;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+// alternative:
+// .destination__title--1 {
+//   background-image: url("../assets/images/hawaii.jpg");
+//   background-size: cover;
+//   align-items: flex-end;
+//   justify-content: flex-end;
 // }

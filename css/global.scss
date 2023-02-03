@@ -1,75 +1,101 @@
-/*  The background color must be #FFFFFF.
-    The site logo/wordmark color must be #335576
-    The currently active page must be underlined using the color #DB7A4E */
+// using _global from partials
 
-/* FOOTER, The background color must be #FEFAF5
-The footer titles and text must be the color #335576
-The footer subtitles must be the color #DB7A4E */
+// @use "./partials/variables" as *;
 
-$wordmark: #335576;
-$background: #ffffff;
-$highlight: #db7a4e;
-$secondary: #fefaf5;
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+//   margin: 0;
+//   // padding: 0;
+// }
+// body {
+//   /* The base font for the site must be Verdana. */
+//   font-family: Verdana, Geneva, Tahoma;
+//   background-color: $background;
+//   font-weight: 400;
+//   color: $wordmark;
+// }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  // padding: 0;
-}
-body {
-  /* The base font for the site must be Verdana. */
-  font-family: Verdana, Geneva, Tahoma;
-  background-color: $background;
-  font-weight: 400;
-  color: $wordmark;
-  
-}
+// h1,
+// h3,
+// p,
+// button {
+//   margin: 2rem;
+// }
+// .padding {
+//   padding-left: 10rem;
+// }
+// // Navigation
+// header {
+//   width: 100%;
+//   height: 4rem;
+//   background-color: $background;
+//   position: fixed;
+//   z-index: 1;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+// }
+// html body {
+//   padding-top: 4rem;
+// }
+// .wordmark {
+//   color: $wordmark;
+// }
+// .navigation {
+//   width: 80%;
+//   margin: auto;
+//   display: flex;
+//   justify-content: space-between;
+//   // justify-content: space-evenly;
+//   align-items: center;
+// }
+// .highlight {
+//   padding-bottom: 0.5em;
+//   border-bottom: 2px solid $highlight;
+// }
+// .navigation__menu a {
+//   text-decoration: none;
+//   color: black;
+// }
+// .navigation__item {
+//   display: inline-block;
+//   margin: 1rem;
+// }
 
-h1,
-h3,
-p,
-button {
-  margin: 1rem;
-}
-.padding {
-    padding-left: 3rem;
-}
-// /* Navigation */
-header {
-  width: 100%;
-  height: 4rem;
-  background-color: $background;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-html body {
-  padding-top: 4rem;
-  // width: 80%;
-}
-.wordmark {
-  color: $wordmark;
-}
-.navigation {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.highlight {
-  padding-bottom: 0.5em;
-  border-bottom: 2px solid $highlight;
-}
-.navigation__menu a {
-  text-decoration: none;
-  color: black;
-}
-.navigation__item {
-  display: inline-block;
-  margin: 1rem;
-}
-// /* FOOTER */
+// // cards
+
+// .card-parent {
+//   display: flex;
+//   justify-content: center;
+// }
+// // Box dimensions
+// .card {
+//   width: 19rem;
+//   height: 23rem;
+//   background-color: green;
+//   border: 0;
+//   border-radius: 5px;
+//   margin: 0 1rem;
+//   position: relative;
+//   display: flex;
+// }
+// .card__link {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   content: "";
+//   text-decoration: none;
+// }
+// .card-img {
+//   border-color: black;
+//   // box-shadow: horizontal offset;
+//   // background-image: ?;
+// }
+// // FOOTER
+// footer {
+//   background-color: $secondary;
+// }
