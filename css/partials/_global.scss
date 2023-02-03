@@ -73,6 +73,7 @@ html body {
 .card-parent {
   display: flex;
   justify-content: center;
+  padding-bottom: 4rem;
 }
 // Box dimensions
 .card {
@@ -101,6 +102,11 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 4rem;
+  // position: fixed;
+}
+.footer__item {
+  display: flex;
 }
 .social__list {
   display: flex;
