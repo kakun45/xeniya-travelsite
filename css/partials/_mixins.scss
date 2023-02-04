@@ -7,6 +7,7 @@
 //   box-shadow: 0 0 6px 0 #000;
 // }
 
+// cards
 // takes in img 'url' to render a background, and sets a title to bottom right. Prepares a container to have cover background
 @mixin destination__title($url) {
   background-image: url($url);
@@ -21,3 +22,14 @@
 //   align-items: flex-end;
 //   justify-content: flex-end;
 // }
+
+// main on Destinations
+// takes in img 'url' to render a background, Prepares a container to have cover background
+@mixin main-parent($url) {
+  background: url($url);
+  width: 100%;
+  margin-bottom: 9rem;
+  background-size: cover;
+  background-position: 0 1194px;
+  // overflow: hidden;
+}

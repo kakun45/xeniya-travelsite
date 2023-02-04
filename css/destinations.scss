@@ -1,26 +1,22 @@
-/* Destination Pages:
-
-They must have a title with the destination name
-The provided image asset for the destination must take up the full width/height of the background for the page.
-They must have 3 Days of Itinerary activities including:
-A title for the day of the week
-4 Itinerary activities (e.g. Breakfast, Lunch, Dinner, Snorkeling)
-Activities must have a background of #FEFAF5 */
+// /* Destination Pages: */
 @use "./partials/variables" as *;
+@use "./partials/mixins" as *;
 
 // main
 main {
   padding-top: 16rem; //for fixed navbar
 }
-.main-parent {
-  width: 100%;
-  background: url("../assets/images/hawaii.jpg");
-  margin-bottom: 9rem;
-  background-size: cover;
-  background-position: 0 1194px;
-  // overflow: hidden;
+/* creates background & styling  */
+.main-parent--hawaii {
+  @include main-parent("../assets/images/hawaii.jpg");
 }
-// main title of a destination page
+.main-parent--iceland {
+  @include main-parent("../assets/images/iceland.jpg");
+}
+.main-parent--greece {
+  @include main-parent("../assets/images/greece.jpg");
+}
+// title of a destination page
 .title {
   padding-left: 8rem;
   font-size: 5em;
@@ -36,21 +32,37 @@ main {
   width: 13rem;
   height: 2.9rem;
   text-align: center;
+  &-title {
+    padding: 1.5rem;
+    border-bottom: 2px solid $basic;
+    & h3 {
+      padding: 0;
+    }
+  }
+  &-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    margin-top: 1rem;
+  }
 }
-.card__item-title {
-  padding: 1.5rem;
-  border-bottom: 2px solid $basic;
-}
-.card__item-title h3 {
-  padding: 0;
-}
-.card__item-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $secondary;
-  margin-top: 1rem;
-}
+// alternative to next 3 rules:
+// .card__item-title {
+//   padding: 1.5rem;
+//   border-bottom: 2px solid $basic;
+
+// .card__item-text {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: $secondary;
+//   margin-top: 1rem;
+// }
+
+// .card__item-title h3 {
+//   padding: 0;
+// }
 
 // FOOTER specific to destinations pages
 footer {
