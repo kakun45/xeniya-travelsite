@@ -1,15 +1,11 @@
 /* main.css
-Home Page - Hero Section:
+Home Page - Hero Section: */
 
-The hero background color must be #FEFAF5
-The text content must be left aligned
-The slogan color must be #335576
-The ‘Get Started’ button background color must be #DB7A4E */
-
-// import vars doesn't come from _global.scss TODO
+// import vars doesn't come from _global.scss, import on individual .scss pages
 @use "./partials/global" as *;
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
+
 // Hero
 main {
   height: 29rem;
@@ -18,7 +14,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 .hero {
   width: 80%;
   overflow: hidden;
@@ -48,18 +43,7 @@ button {
 }
 
 // Recommendations
-/* Home Page - Recommendations Section:
-
-The recommendations title must have the color of #335576
-There will be 3 Cards, one for each destination (Iceland, Greece, Hawaii)
-The destination name must be in the bottom right corner of the card
-The border radius of the cards must be 5px
-The border of the cards must be 1px solid black with an opacity of 20%
-The box shadow of the cards must be:
-Horizontal Offset: 0px
-Vertical Offset: 4px
-Blur: 4px
-Color: Black, with an opacity of 20% */
+/* Home Page - Recommendations Section: */
 
 // Card. Outside box. Here is where the shadows and borders of landing page are set, font color on main page
 .card__link {
@@ -76,7 +60,6 @@ Color: Black, with an opacity of 20% */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   color: $background; // font
 }
-
 // Cards' background & titles styling
 .destination__title--1 {
   @include destination__title("../assets/images/hawaii.jpg");

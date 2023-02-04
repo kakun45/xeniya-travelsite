@@ -23,7 +23,7 @@
 //   justify-content: flex-end;
 // }
 
-// main on Destinations
+// <main> on Destinations
 // takes in img 'url' to render a background, Prepares a container to have cover background
 @mixin main-parent($url) {
   background: url($url);
@@ -31,5 +31,4 @@
   margin-bottom: 9rem;
   background-size: cover;
   background-position: 0 1194px;
-  // overflow: hidden;
 }
