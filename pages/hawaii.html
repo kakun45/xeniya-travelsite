@@ -4,14 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="../css/global.css" /> -->
     <link rel="stylesheet" href="../css/destinations.css" />
     <title>Hawaii</title>
   </head>
   <body>
     <!-- The Destination Pages MUST have 3 Sections:
 Navigation Bar (Same as Home Page) -->
-    <header><nav></nav></header>
+
+    <!-- Each page MUST have an identical Navigation Bar with the following style:
+    The Navigation Bar MUST be fixed to the top of the page -->
+    <header>
+      <nav class="navigation">
+        <div class="navigation__menu">
+          <a href="../index.html"><h2 class="wordmark">Travel Site</h2></a>
+        </div>
+        <div class="navigation__menu nav--right">
+          <ul>
+            <a href="../index.html"><li class="navigation__item">Home</li></a>
+            <a href="#"><li class="navigation__item highlight">Hawaii</li></a>
+            <a href="../pages/iceland.html"
+              ><li class="navigation__item">Iceland</li></a
+            >
+            <a href="../pages/greece.html"
+              ><li class="navigation__item">Greece</li></a
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <!-- 3 Itinerary Cards for a 3 Day trip
 Friday
 Saturday
@@ -22,6 +43,65 @@ Reuse as much styling and code as possible (e.g. Destination Cards and Itinerary
     <main></main>
 
     <!-- Footer (Same as Home Page) -->
-    <footer></footer>
+    <!-- 4.Footer universal for all 
+    Each page MUST have an identical footer -->
+    <footer>
+      <!-- 1 -->
+      <section class="section section--edge">
+        <h1>Contact</h1>
+        <ul class="footer__item footer__item--column">
+          <li class="footer__subtitle">Email</li>
+          <li>info@travelsite.com</li>
+        </ul>
+      </section>
+      <!-- 2 -->
+      <section class="section section--middle">
+        <h1>Hours</h1>
+        <ul class="footer__item">
+          <div>
+            <li class="footer__subtitle">MONDAY - FRIDAY</li>
+            <li>9:00 AM - 5:00 PM</li>
+          </div>
+          <div>
+            <li class="footer__subtitle">SATURDAY</li>
+            <li>10:00 AM - 4:00 PM</li>
+          </div>
+          <div>
+            <li class="footer__subtitle">SUNDAY</li>
+            <li>Closed</li>
+          </div>
+        </ul>
+      </section>
+      <!-- 3 -->
+      <section class="section section--edge">
+        <h1>Social</h1>
+        <ul class="footer__item">
+          <li>
+            <a href="https://www.instagram.com/"
+              ><img
+                class="social__img"
+                src="../assets/icons/icon-instagram.png"
+                alt="Instagram icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><img
+                class="social__img"
+                src="../assets/icons/icon-facebook.png"
+                alt="Facebook icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/?lang=en"
+              ><img
+                class="social__img"
+                src="../assets/icons/icon-twitter.png"
+                alt="twitter icon"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>

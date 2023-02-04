@@ -10,7 +10,6 @@ The footer subtitles must be the color #DB7A4E */
 *::after {
   box-sizing: border-box;
   margin: 0;
-  // padding: 0;
 }
 body {
   /* The base font for the site must be Verdana. */
@@ -75,7 +74,7 @@ html body {
   justify-content: center;
   padding-bottom: 4rem;
 }
-// Box dimensions
+// Box dimensions common. Use private settings in respective stylesheets
 .card {
   width: 15rem;
   height: 23rem;
