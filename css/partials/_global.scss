@@ -102,7 +102,13 @@ footer {
   padding-bottom: 4rem;
   padding-left: 7rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+.footer__parent {
+  justify-content: center;
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
 footer h1 {
   padding-left: 0;
@@ -120,21 +126,24 @@ footer h1 {
   display: flex;
 }
 .footer__item {
-  // padding-top: 1rem;
   padding-left: 0;
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 70%;
   flex-direction: row;
 }
 .footer__item--column {
   flex-direction: column;
 }
 .footer__subtitle {
+  font-size: 0.6rem;
   margin: 1.5rem 0;
   color: $highlight;
   display: flex;
   justify-content: space-between;
+}
+.footer__text {
+  font-size: 0.7rem;
 }
 .social__img {
   height: 2rem;
