@@ -18,6 +18,7 @@ body {
   font-weight: 400;
   color: $wordmark;
 }
+
 li {
   list-style-type: none;
 }
@@ -42,7 +43,7 @@ header {
   top: 0;
 }
 html body {
-  padding-top: 4rem;
+  padding-top: 4rem;// for fixed navbar
 }
 .wordmark {
   color: $wordmark;
@@ -76,23 +77,14 @@ html body {
 }
 // Box dimensions common. Use private settings in respective stylesheets
 .card {
-  width: 15rem;
+  width: 16rem;
   height: 23rem;
-  background-color: green;
+  background-color: rgb(255, 255, 255);
   border: 0;
   border-radius: 5px;
   margin: 0 1rem;
   position: relative;
   display: flex;
-}
-.card__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
-  text-decoration: none;
 }
 
 // FOOTER

@@ -1,0 +1,74 @@
+@use "../css/partials/variables" as *;
+// @use "../css/partials/global" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  // padding: 0;
+}
+body {
+  /* The base font for the site must be Verdana. */
+  font-family: Verdana, Geneva, Tahoma;
+  background-color: #fefaf5;
+  font-weight: 400;
+  color: $wordmark;
+}
+li {
+  list-style-type: none;
+}
+.background {
+  background-color: rgb(206, 183, 183);
+}
+// / cards from _global
+.card-parent {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+// Box dimensions common. Use private settings in respective stylesheets
+.card {
+  width: 17rem; //change
+  height: 23rem;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 5px;
+  margin: 0 1rem;
+  position: relative;
+  display: flex;
+}
+// _____________
+.card {
+  // height: auto;
+  justify-content: center;
+}
+
+// .card__item {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// needs this if a <ul>
+ul {
+  padding-left: 0;
+}
+.card__item {
+  width: 13rem;
+  height: 2.9rem;
+  text-align: center;
+}
+
+.card__item-title {
+  padding: 1.5rem;
+  // background-color: white;
+  border-bottom: 2px solid black;
+}
+.card__item-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary;
+  margin-top: 1rem;
+}

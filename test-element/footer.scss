@@ -1,0 +1,73 @@
+@use "../css/partials/variables" as *;
+// $secondary: #fefaf5;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  // padding: 0;
+}
+body {
+  /* The base font for the site must be Verdana. */
+  font-family: Verdana, Geneva, Tahoma;
+  background-color: #fefaf5;
+  font-weight: 400;
+  color: $wordmark;
+}
+li {
+  list-style-type: none;
+}
+// FOOTER
+footer {
+  padding-top: 4rem;
+  background-color: $secondary;
+  padding-bottom: 4rem;
+  padding-left: 7rem;
+  display: flex;
+  justify-content: space-around;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section--edge {
+  flex-grow: 1;
+}
+.section--middle {
+  flex-grow: 3;
+  display: flex;
+}
+.footer__item {
+  padding-top: 1rem;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  flex-direction: row;
+}
+.footer__item--column {
+  flex-direction: column;
+}
+.footer__subtitle {
+  margin: 1.5rem 0;
+  color: $highlight;
+  display: flex;
+  justify-content: space-between;
+}
+.social__img {
+  height: 2rem;
+  margin-right: 2rem;
+}
+// .social__list {
+//   padding-left: 0;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .footer__item--social {
+// width: 50%;
+// align-items: stretch;
+// flex-direction: row;
+// }

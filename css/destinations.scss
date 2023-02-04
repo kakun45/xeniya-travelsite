@@ -6,4 +6,53 @@ They must have 3 Days of Itinerary activities including:
 A title for the day of the week
 4 Itinerary activities (e.g. Breakfast, Lunch, Dinner, Snorkeling)
 Activities must have a background of #FEFAF5 */
-@use "./partials/global" as *;
+@use "./partials/variables" as *;
+
+// main
+main {
+  padding-top: 16rem; //for fixed navbar
+}
+.main-parent {
+  width: 100%;
+  background: url("../assets/images/hawaii.jpg");
+  margin-bottom: 9rem;
+  background-size: cover;
+  background-position: 0 1194px;
+  // overflow: hidden;
+}
+// main title of a destination page
+.title {
+  padding-left: 8rem;
+  font-size: 5em;
+  color: $background;
+}
+
+// Cards. reused + Itinerary activities. Font specific to destinations pages
+.card {
+  color: $basic; //font
+  justify-content: center;
+}
+.card__item {
+  width: 13rem;
+  height: 2.9rem;
+  text-align: center;
+}
+.card__item-title {
+  padding: 1.5rem;
+  border-bottom: 2px solid $basic;
+}
+.card__item-title h3 {
+  padding: 0;
+}
+.card__item-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary;
+  margin-top: 1rem;
+}
+
+// FOOTER specific to destinations pages
+footer {
+  padding-top: 9rem;
+}
