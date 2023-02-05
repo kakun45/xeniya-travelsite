@@ -1,5 +1,6 @@
 # xeniya-travelsite 
-### for a screen size of 1280px wide
+### Multi-page static site HTML and CSS only.
+### For a screen size of 1280px wide.
 Homepage:
 
 ![Screen Shot 2023-02-04 at 7 04 18 PM](https://user-images.githubusercontent.com/53381916/216794802-18497f81-675d-4868-a4e7-b6cf554e7848.png)
@@ -30,15 +31,20 @@ Structure:
 -- Iceland
 -- Greece
 -- Hawaii
+  + The Navigation Bar is fixed to the top of the page
+  + The currently active page is underlined
 - Hero
 - Recommendations
  + 3 Cards: One card for each destination
-Linked to the appropriate destination page (Iceland, Greece, Hawaii).
-Clicking anywhere on the card goes to the destination page.
+Linked to the appropriate destination page (Iceland, Greece, Hawaii). 
+Clicking anywhere on the card goes to the destination page. 
 # The Destination Pages have 3 Sections:
 - Navigation Bar (Same as Home Page)
 - 3 Itinerary Cards for a 3 Day trip
   + Friday
 -- Saturday
--- Sunday
+-- Sunday.
+They have 3 Days of Itinerary activities including:
+A title for the day of the week
+4 Itinerary activities (e.g. Breakfast, Lunch, Dinner, Snorkeling)
 # Footer (Same as Home Page)
