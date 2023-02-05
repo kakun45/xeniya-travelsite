@@ -2,4 +2,4 @@
 *.css
 .env
 *.css.map
-/test-footer
+/test-element
