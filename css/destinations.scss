@@ -28,6 +28,9 @@ main {
   color: $basic; //font
   justify-content: center;
 }
+.card__list {
+  padding-left: 0;
+}
 .card__item {
   width: 13rem;
   height: 2.9rem;
