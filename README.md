@@ -17,7 +17,7 @@ Destinations pages
 ![Screen Shot 2023-02-04 at 7 25 21 PM](https://user-images.githubusercontent.com/53381916/216795286-7740a187-bd0a-4b24-9f9b-9c894f46a1a7.png)
 ![Screen Shot 2023-02-04 at 7 25 34 PM](https://user-images.githubusercontent.com/53381916/216795285-fa83810c-6dbd-4b2a-99b5-6e6da59c7f67.png)
 
-Stylesheets (provided by Armance):
+Stylesheets (were provided by @moomance):
 
 ![Image 31-01-2023 at 20 54](https://user-images.githubusercontent.com/53381916/216794784-6dced87f-e5eb-4c34-89a7-c956a1bd330e.jpeg)
 ![Image 31-01-2023 at 20 54 (1)](https://user-images.githubusercontent.com/53381916/216794786-f43217d1-f6ef-43a5-8d82-f27b59e45cd6.jpeg)
