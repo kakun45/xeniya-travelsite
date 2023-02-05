@@ -1,6 +1,12 @@
 # xeniya-travelsite 
 ### Multi-page static site HTML and CSS only.
 ### For a screen size of 1280px wide.
+
+- The project built around common component code. I reused as much styling and code as possible (e.g. Destination Cards and Itinerary cards) by utilising inheritance, and @mixin, @use $variables, &-operator of SASS functionality.
+- Used the BEM methodology for all class names.
+- The layout of the site uses the Box Model, the CSS display property and CSS positioning including Flexbox. 
+- Not used: floats.
+
 Homepage:
 
 ![Screen Shot 2023-02-04 at 7 04 18 PM](https://user-images.githubusercontent.com/53381916/216794802-18497f81-675d-4868-a4e7-b6cf554e7848.png)
@@ -35,7 +41,7 @@ Structure:
   + The currently active page is underlined
 - Hero
 - Recommendations
- + 3 Cards: One card for each destination
+ + 3 Destination Cards: One card for each destination
 Linked to the appropriate destination page (Iceland, Greece, Hawaii). 
 Clicking anywhere on the card goes to the destination page. 
 # The Destination Pages have 3 Sections:
@@ -48,3 +54,4 @@ They have 3 Days of Itinerary activities including:
 A title for the day of the week
 4 Itinerary activities (e.g. Breakfast, Lunch, Dinner, Snorkeling)
 # Footer (Same as Home Page)
+
